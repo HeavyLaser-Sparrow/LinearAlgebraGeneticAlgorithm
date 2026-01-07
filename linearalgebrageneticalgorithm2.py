@@ -406,7 +406,6 @@ class Ship:
     total_firepower = self.vector[31] + self.vector[32] + self.vector[33]
 
     # Survivability = Shield Capacity [0] + Mass/Hull [6]
-    # FIX: Previously used Index 4 (Crew) incorrectly.
     survivability = self.vector[0] + mass
 
     # --- 3. APPLY SCORING WEIGHTS ---
